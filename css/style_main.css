@@ -1,0 +1,55 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(#b2b2b2, #b1b1b1, #b3b3b3);
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    width: /*whatever width you want*/;
+}
+
+h1
+{	
+	font-family: "Arial Narrow", "Arial", sans-serif;
+	font-weight: 500;
+    font-size: 70pt;
+	color: #00AFF0;
+}
+
+img.grayscale {
+  /* Firefox 3.5+, IE10 */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+  /* Fade to color for Chrome and Safari */
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
